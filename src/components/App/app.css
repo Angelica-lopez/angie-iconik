@@ -1,0 +1,67 @@
+.main {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 50px auto;
+  grid-template-columns: 190px auto;
+  grid-template-areas:
+    "menu header"
+    "menu content";
+}
+
+.header {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 45px;
+  grid-area: header;
+  grid-gap: 25px;
+}
+
+.header__name {
+  color: gray;
+}
+
+.header__button {
+  width: 55px;
+  height: 25px;
+  border: solid 1px rgb(235, 171, 182);
+  border-radius: 5px;
+}
+
+.menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(205, 134, 146);
+  align-items: center;
+  padding-top: 30px;
+  grid-area: menu;
+}
+
+.menu__logo-iconik {
+  margin-bottom: 30px;
+  width: 120px;
+  height: 40px;
+}
+
+.menu__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__link {
+  color: white;
+  font-weight: bold;
+  font-size: 16x;
+}
+
+.menu__link:not(:last-child) {
+  padding-bottom: 25px;
+}
+
+.content {
+  grid-area: content;
+  overflow: scroll;
+}
