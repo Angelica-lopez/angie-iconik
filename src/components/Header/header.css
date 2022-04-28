@@ -2,7 +2,9 @@
   display: flex;
   justify-content: flex-end;
   padding-right: 80px;
+  align-items: center;
   grid-gap: 25px;
+  background-color: white;
   grid-area: header;
 }
 
