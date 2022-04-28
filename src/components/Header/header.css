@@ -3,6 +3,7 @@
   justify-content: flex-end;
   padding-right: 80px;
   grid-gap: 25px;
+  grid-area: header;
 }
 
 .header__user-name {

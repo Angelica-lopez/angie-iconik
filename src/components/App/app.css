@@ -8,17 +8,6 @@
     "menu content";
 }
 
-.header__name {
-  color: gray;
-}
-
-.header__button {
-  width: 55px;
-  height: 25px;
-  border: solid 1px rgb(235, 171, 182);
-  border-radius: 5px;
-}
-
 .menu {
   height: 100vh;
   display: flex;
