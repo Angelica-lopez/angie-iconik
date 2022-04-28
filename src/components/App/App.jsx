@@ -1,4 +1,5 @@
 import logoIconik from "../../assets/images/logo.png";
+import Header from "../Header";
 import './app.css';
 
 const App = () => (
@@ -16,12 +17,7 @@ const App = () => (
         <span className="menu__link">Configuracion</span>
       </nav>
     </div>
-
-    <header className="header">
-      <span className="header__name">Angie Lopez H.</span>
-      <button className="header__button">Salir</button>
-    </header>
-
+    <Header />
     <section className="content">Este es el contenido.</section>
   </main>
 );

@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 80px;
+  grid-gap: 25px;
+  grid-area: header;
+}
+
+.header__user-name {
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.header__leave-button {
+  width: 55px;
+  height: 25px;
+  font-weight: lighter;
+  border-radius: 5px;
+  border: solid 1px rgb(235, 171, 182); 
+}
