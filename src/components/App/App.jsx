@@ -2,7 +2,7 @@ import logoIconik from "../../assets/images/logo.png";
 import './app.css';
 
 const App = () => (
-  <div className="main">
+  <main className="main">
     <div className="menu">
       <img className='menu__logo-iconik' src={logoIconik} alt="Iconik" />
       <nav className="menu__container">
@@ -23,7 +23,7 @@ const App = () => (
     </header>
 
     <section className="content">Este es el contenido.</section>
-  </div>
+  </main>
 );
 
 export default App;

@@ -16,17 +16,16 @@
   justify-content: flex-end;
   padding-right: 45px;
   grid-area: header;
+  grid-gap: 25px;
 }
 
 .header__name {
   color: gray;
-  padding-right: 25px;
 }
 
 .header__button {
   width: 55px;
   height: 25px;
-  background-color: transparent;
   border: solid 1px rgb(235, 171, 182);
   border-radius: 5px;
 }
@@ -38,7 +37,6 @@
   background-color: rgb(205, 134, 146);
   align-items: center;
   padding-top: 30px;
-  box-sizing: border-box;
   grid-area: menu;
 }
 .menu__logo-iconik {
@@ -57,6 +55,9 @@
   color: white;
   font-weight: bold;
   font-size: 16x;
+}
+
+.menu__link:not(:last-child) {
   padding-bottom: 25px;
 }
 
