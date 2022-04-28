@@ -8,16 +8,6 @@
     "menu content";
 }
 
-.header {
-  display: flex;
-  background-color: #fff;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: 45px;
-  grid-area: header;
-  grid-gap: 25px;
-}
-
 .header__name {
   color: gray;
 }
