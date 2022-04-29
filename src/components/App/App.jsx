@@ -1,3 +1,8 @@
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 import Header from "../Header";
 import Menu from "../Menu";
 import Dashboard from "../../Pages/Dashboard";
@@ -9,12 +14,6 @@ import Appointment from "../../Pages/Appointment";
 import Products from "../../Pages/Products";
 import Configuration from "../../Pages/Configuration";
 import './app.css';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-
 
 const App = () => (
   <BrowserRouter>
