@@ -8,7 +8,7 @@ import Menu from "../Menu";
 import Dashboard from "../../Pages/Dashboard";
 import Income from "../../Pages/Income";
 import Expenses from "../../Pages/Expenses";
-import Workers from "../../Pages/Workers";
+import Employees from "../../Pages/Employees";
 import Clients from "../../Pages/Clients";
 import Appointment from "../../Pages/Appointment";
 import Products from "../../Pages/Products";
@@ -25,7 +25,7 @@ const App = () => (
           <Route path="/" element={<Dashboard />} />
           <Route path="/ingresos" element={<Income />} />
           <Route path="/egresos" element={<Expenses />} />
-          <Route path="/trabajadores" element={<Workers />} />
+          <Route path="/trabajadores" element={<Employees />} />
           <Route path="/clientes" element={<Clients />} />
           <Route path="/citas" element={<Appointment />} />
           <Route path="/productos" element={<Products />} />
