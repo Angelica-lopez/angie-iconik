@@ -24,6 +24,7 @@
   color: white;
   font-weight: bold;
   font-size: 16x;
+  text-decoration: none;
 }
 
 .menu__link:not(:last-child) {
