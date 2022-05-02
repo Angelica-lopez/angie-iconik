@@ -1,7 +1,7 @@
 .main {
   display: grid;
   height: 100vh;
-  grid-template-rows: 50px auto;
+  grid-template-rows: 53px auto;
   grid-template-columns: 190px auto;
   grid-template-areas:
     "menu header"
@@ -11,4 +11,6 @@
 .content {
   grid-area: content;
   overflow: scroll;
+  padding-left: 18px;
+  padding-top: 13px;
 }

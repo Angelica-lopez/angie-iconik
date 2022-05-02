@@ -2,9 +2,9 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: rgb(205, 134, 146);
+  background-color: #C18585;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 23px;
   grid-area: menu;
 }
 
