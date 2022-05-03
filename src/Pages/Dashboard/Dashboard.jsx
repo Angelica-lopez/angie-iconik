@@ -8,24 +8,24 @@ const Dashboard = () => (
     <div className="dashboard-cards">
       <ResumeCard 
         value="$1000000"
-        cardName="Ingresos"
+        title="Ingresos"
         iconName="money-in"
       />
       <ResumeCard 
         value="$4000000" 
-        cardName="Egresos" 
+        title="Egresos" 
         iconName="money-out" 
         backgroundCard="#EAC0C1"
       />
       <ResumeCard 
         value="5" 
-        cardName="Clientes" 
+        title="Clientes" 
         iconName="group" 
         backgroundCard="#C18585"
         />
       <ResumeCard 
         value="10" 
-        cardName="Proximas citas" 
+        title="Proximas citas" 
         iconName="calendar-check" 
         backgroundCard="#606060" 
         marginCard="0"
