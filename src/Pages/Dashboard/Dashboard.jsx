@@ -16,6 +16,8 @@ const Dashboard = () => (
         title="Egresos" 
         iconName="money-out" 
         backgroundCard="#EAC0C1"
+        widthCard={35}
+        heightCard={35}
       />
       <ResumeCard 
         value="5" 
