@@ -1,4 +1,5 @@
 import Icon from "../Icon";
+import PropTypes from "prop-types";
 import "./resume-card.css";
 
 const ResumeCard = ({ 
@@ -16,5 +17,21 @@ const ResumeCard = ({
     <h2 className="resume-card__title">{title}</h2>
   </div>
 );
+
+ResumeCard.propTypes = {
+  value: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  iconName: PropTypes.string.isRequired,
+  backgroundCard: PropTypes.string,
+  marginCard: PropTypes.number,
+  widthCard: PropTypes.number,
+  heightCard: PropTypes.number,
+};
+
+ResumeCard.defaultProps = {
+  marginCard: 0,
+  backgroundCard: "gray",
+};
+
 
 export default ResumeCard;
