@@ -1,37 +1,51 @@
+import React from "react";
 import ResumeCard from "../../components/ResumeCard";
+import { Table } from "../../components/Table/Table";
+import { cards } from "../../Helpers/data"
 import "./dashboard.css";
+/* tengo que importar la variable "cards", "clientsTable", "servicesTable"  que esta en helpers(data.js)*/
+
 
 const Dashboard = () => (
+
+
   <>
     <h1 className="dashboard-title">Dashboard</h1>
     <h2 className="dashboard-text">Bienvenid@s a Iconik</h2>
     <div className="dashboard-cards">
-      <ResumeCard 
-        value="$1000000"
-        title="Ingresos"
-        iconName="money-in"
-      />
-      <ResumeCard 
-        value="$4000000" 
-        title="Egresos" 
-        iconName="money-out" 
-        backgroundCard="#EAC0C1"
-        widthCard={35}
-        heightCard={35}
-      />
-      <ResumeCard 
-        value="5" 
-        title="Clientes" 
-        iconName="group" 
-        backgroundCard="#C18585"
-        />
-      <ResumeCard 
-        value="10" 
-        title="Proximas citas" 
-        iconName="calendar-check" 
-        backgroundCard="#606060" 
-        marginCard="0"
-      />
+      {
+        cards.map(({ 
+          value,
+          title,
+          iconName,
+          backgroundCard,
+          widthCard,
+          heightCard
+        }) => (
+          <ResumeCard
+            value= {value} 
+            title={title}
+            iconName={iconName} 
+            backgroundCard={backgroundCard}
+            widthCard={widthCard}
+            heightCard={heightCard}
+          />
+        ))
+      }
+    </div>
+
+    <div className="tables-container">
+    <div className="table1">
+      <h1 className="title-table-clients">Ultimos Ingresos</h1>
+      <Table></Table>
+    </div>
+
+    <div className="table1">
+      <h1 className="title-table-clients">Ultimos Egresos</h1>
+      <div className="table-container">
+        <Table></Table>
+      </div>
+    </div>
     </div>
   </>
 );
